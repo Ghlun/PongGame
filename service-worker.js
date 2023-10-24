@@ -6,8 +6,11 @@ self.addEventListener('install', (event) => {
         '/index.html',
         '/style.css',
         '/script.js',
+        '/manifest.json',
         '/icon.png',
-        '/manifest.json'
+        '/hitPaddle.mp3',
+        '/hitWall.mp3',
+        '/scorePoint.mp3'
       ]);
     })
   );

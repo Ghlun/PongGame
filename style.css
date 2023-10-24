@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #333;
+  background-color: #282c34;
   color: white;
   font-family: 'Arial', sans-serif;
 }
@@ -13,8 +13,7 @@ canvas {
   border: 1px solid white;
 }
 
-#player-form,
-#pause-menu {
+#player-form, #scoreboard, #pause-menu {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,16 +24,21 @@ canvas {
   border-radius: 10px;
 }
 
-#player-form label,
-#player-form input,
-#player-form button,
-#pause-menu h1,
-#pause-menu button {
+#player-form label, #player-form input, #player-form button, #scoreboard h2, #scoreboard ul, #pause-menu {
   margin: 10px;
   padding: 5px;
 }
 
-#player-form button,
-#pause-menu button {
+#player-form button, #pause-menu {
   cursor: pointer;
+}
+
+#scoreboard {
+  display: none;
+}
+
+#pause-menu {
+  display: none;
+  font-size: 2em;
+  color: #f00;
 }
