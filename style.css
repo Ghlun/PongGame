@@ -4,10 +4,37 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: black;
+  background-color: #333;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
+
 canvas {
   border: 1px solid white;
+}
+
+#player-form,
+#pause-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#player-form label,
+#player-form input,
+#player-form button,
+#pause-menu h1,
+#pause-menu button {
+  margin: 10px;
+  padding: 5px;
+}
+
+#player-form button,
+#pause-menu button {
+  cursor: pointer;
 }
