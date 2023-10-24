@@ -186,3 +186,4 @@ function startGame() {
 
 // Initialize game
 document.getElementById('player-form').style.display = 'block';
+
