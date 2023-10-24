@@ -175,6 +175,7 @@ function updateScoreboard() {
 }
 
 function startGame() {
+  console.log("startGame function is called");
   player1Name = document.getElementById('player1').value || "Player 1";
   player2Name = document.getElementById('player2').value || "Player 2";
   gameStarted = true;
@@ -183,6 +184,7 @@ function startGame() {
   updateScoreboard();
   gameLoop();
 }
+
 
 function gameLoop() {
   draw();
