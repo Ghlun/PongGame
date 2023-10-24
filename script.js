@@ -184,6 +184,11 @@ function startGame() {
   gameLoop();
 }
 
+function gameLoop() {
+  draw();
+  update();
+  requestAnimationFrame(gameLoop);
+}
+
 // Initialize game
 document.getElementById('player-form').style.display = 'block';
-
